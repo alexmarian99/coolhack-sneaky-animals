@@ -1,0 +1,14 @@
+﻿@page "/LogOut"
+@inject IJSRuntime js
+@inject NavigationManager NavManager
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await js.InvokeVoidAsync("setCookieToken", null);
+            NavManager.NavigateTo("/LogIn");
+        }
+    }
+}

@@ -1,0 +1,702 @@
+﻿@page
+@model IndexModel
+@inject GraphQLClient graphql
+@{
+    var query = @"query ClientsCount {
+  users_aggregate {
+    aggregate {
+      count
+    }
+  }
+}";
+    dynamic obj = JsonConvert.DeserializeObject(graphql.Query(query).Raw);
+}
+
+<!-- =========================== header-->
+<header class="header has-style1">
+    <!-- =========================== navbar-->
+    <nav class="navbar">
+        <div class="container">
+            <div class="flex">
+                <a href="../index.html " class="navbar-brand flex vcenter" href="#">
+                    <img data-aos="fade-right"
+                         class="logo" src="/images/logo.png" style="height: 3.5em" alt="">
+                </a>
+            </div>
+            <div class="level-right">
+                <!-- your list menu here -->
+                <div class="navbar-menu  ">
+
+                    <a href="" data-aos="fade-left" data-aos-delay="400" class="btn btn-primary mr-1 btn-round">
+                        Get
+                        Started
+                    </a>
+                    <a href="" class="btn btn-opacity btn-round ">
+                        Sign in
+                    </a>
+                </div>
+                <div class="mobile-menu">
+                    <!-- your list menu in mobile here -->
+                    <ul>
+                        <li>
+                            <a class="fade-page" href="Home_1.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="fade-page" href="Home_2.html">Plans</a>
+                        </li>
+                        <li>
+                            <a class="fade-page" href="Home_3.html">Doctors</a>
+                        </li>
+                        <li>
+                            <a class="fade-page" href="Home_4.html">Contact</a>
+                        </li>
+                        <li>
+                            <a class="fade-page" href="Home_5.html">Account</a>
+                        </li>
+                        <li>
+                            <a class="fade-page" href="Home_1_grad.html">
+                                Consultations <span class="text-grad"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fade-page" href="Home_2_grad.html">
+                                Prescrioptions <span class="text-grad"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fade-page" href="Home_3_grad.html">
+                                Sign in <span class="text-grad"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fade-page" href="Home_4_grad.html">
+                                Start free today !<span class="text-grad"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fade-page" href="Home_5_grad.html">
+                                Log out <span class="text-grad"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <div class="menu-toggle-icon">
+                        <div class="menu-toggle">
+                            <div class="menu">
+                                <input type="checkbox">
+                                <div class="line-menu"></div>
+                                <div class="line-menu"></div>
+                                <div class="line-menu"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header-wrap">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="header-title" data-aos="fade-up" data-aos-delay="500">
+                        We Connect You With
+                        The Best Doctors
+                    </h2>
+                    <p class="header-desc" data-aos="fade-up" data-aos-delay="600">
+                        Connect with doctors for your every health need.
+                    </p>
+                    <div class="d-flex justify-content-center  justify-content-lg-start ">
+                        <a href="#" class="btn btn-primary btn-round" data-aos="fade-up" data-aos-delay="700">
+                            Let's
+                            Get
+                            Healthier!<ion-icon name="arrow-forward"></ion-icon>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="header-img">
+                        <img data-aos="fade-left" data-aos-delay="700" src="/assets/images/others/screen.svg"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- =========================== section companies-->
+<div class="container" data-aos="fade-up" data-aos-delay="500">
+    <section class="section is-sm pb-0">
+        <div class=" section section-companies has-style1">
+            <div class="row min-30 flex center">
+                <div class="col-lg-2 col-md-3  col-6">
+                    <div class="company-item">
+                        <img src="/images/docker.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="company-item">
+                        <img src="/assets/images/logos/github.svg" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="company-item">
+                        <img src="/images/graphql.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="company-item">
+                        <img src="/images/hasura.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="company-item">
+                        <img src="/images/csharp.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="company-item">
+                        <img src="/assets/images/logos/google.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- =========================== section feautures-->
+<section class="section is-sm section-feautures">
+    <div class="container">
+        <div class="section-head">
+            <h5 class="section-subtitle is-center"> Dr. Health </h5>
+            <h2 class="section-title is-center">Get started on your healthier journey!</h2>
+        </div>
+        <div class="boxes">
+            <div class="row min-30 flex center">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="box has-secondary-bg">
+                        <div class="box-icon">
+                            <ion-icon name="logo-buffer"></ion-icon>
+                        </div>
+                        <h3 class="box-title">Get the best advice !</h3>
+                        <p class="box-desc">
+                            Live chat  with a doctor about anything you need!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="box has-shadow has-blue-text">
+                        <div class="box-icon">
+                            <ion-icon name="logo-buffer"></ion-icon>
+                        </div>
+                        <h3 class="box-title">Checkout the Doctors !</h3>
+                        <p class="box-desc">
+                            Get the full list of all the doctors,and book a consultation today !
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="box has-primary-bg">
+                        <div class="box-icon">
+                            <ion-icon name="medal"></ion-icon>
+                        </div>
+                        <h3 class="box-title">Plans</h3>
+                        <p class="box-desc">
+                            Get the best plan for you and your family!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =========================== section About-->
+<section class="section section-about section-counter ">
+    <div class="container">
+        <div class="row flex vcenter">
+            <div class="col-lg-6">
+                <div class="section-head mb-lg-0">
+                    <h5 class="section-subtitle "> Try out our application today for free! </h5>
+                    <h2 class="section-title ">
+                        Get Started with a Free Trial!
+                    </h2>
+                    <p class="section-desc">
+                        You can get started today with our free trial for 30 days,you can book consultations with any available doctor
+                        ,get your prescriptions, and see all your information on your Account page !
+                    </p>
+                    <a href="#" class="btn btn-primary btn-round">Get started today for FREE!</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="about-img" src="/assets/images/bg/illustration1.svg" alt="">
+                <img class="section-shape1" src="/assets/images/bg/shape-illustration.svg" alt="">
+
+            </div>
+
+        </div>
+        <div class="row counters flex center min-20">
+            <!-- ==== item -->
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="counter-item">
+                    <h5 class="counter-number ">+ <span class="counter">@obj.data.users_aggregate.aggregate.count</span> </h5>
+                    <p class="counter-name"> Clients </p>
+                </div>
+            </div>
+            <!-- ==== item -->
+            <div class="col-lg-3  col-md-4 col-6">
+                <div class="counter-item">
+                    <h5 class="counter-number ">+ <span class="counter">9500</span> </h5>
+                    <p class="counter-name"> Consultations </p>
+                </div>
+            </div>
+            <!-- ==== item -->
+            <div class="col-lg-3  col-md-4 col-6">
+                <div class="counter-item">
+                    <h5 class="counter-number "><span class="counter"> 98</span>k </h5>
+                    <p class="counter-name"> invester </p>
+                </div>
+            </div>
+            <!-- ==== item -->
+            <div class="col-lg-3  col-md-4 col-6">
+                <div class="counter-item">
+                    <h5 class="counter-number counter"> 945</h5>
+                    <p class="counter-name"> Doctors </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =========================== section Works-->
+<section class="section is-sm section-works">
+    <img class="section-particle" src="/assets/images/others/particle.svg" alt="">
+
+    <div class="container">
+        <div class="section-head flex between vcenter">
+            <div>
+                <h5 class="section-subtitle"> What We Do Best </h5>
+                <h2 class="section-title">We've done a lot's<span class="text-primary">. </span></h2>
+
+            </div>
+            <a href="#" class="btn btn-primary mt-sm-30 btn-round"> see more </a>
+        </div>
+        <div class="work-boxes work-boxes-slick">
+            <div class="">
+                <div class="work-box">
+                    <img class="work-img" src="/assets/images/bg/work1.png" alt="">
+                    <div class="work-head">
+                        <h5 class="title"> <a href="#"> clean watcher</a> </h5>
+                        <span class="sub-title"> products </span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="work-box">
+                    <img class="work-img" src="/assets/images/bg/work2.png" alt="">
+                    <div class="work-head">
+                        <h5 class="title"> <a href="#"> clean watcher</a> </h5>
+                        <span class="sub-title"> products </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="work-box">
+                    <img class="work-img" src="/assets/images/bg/work3.png" alt="">
+                    <div class="work-head">
+                        <h5 class="title"> <a href="#"> clean watcher</a> </h5>
+                        <span class="sub-title"> products </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="work-box">
+                    <img class="work-img" src="/assets/images/bg/work2.png" alt="">
+                    <div class="work-head">
+                        <h5 class="title"> <a href="#"> clean watcher</a> </h5>
+                        <span class="sub-title"> products </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="work-box">
+                    <img class="work-img" src="/assets/images/bg/work3.png" alt="">
+                    <div class="work-head">
+                        <h5 class="title"> <a href="#"> clean watcher</a> </h5>
+                        <span class="sub-title"> products </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =========================== section Testimonials-->
+<section class="section is-sm section-testimonial overflow-hidden section-grey">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="section-head mb-lg-0">
+                    <h5 class="section-subtitle"> Testimonials</h5>
+                    <h2 class="section-title">
+                        Check what our <br>
+                        clients say about us!<span class="text-primary">. </span>
+                    </h2>
+                    <p class="section-desc mb-lg-0">
+                        Our clients experience and feedback is very important for us.
+                        Checkout what our clients experienced with us so far !
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="client-wrap">
+                    <div class="client-img">
+                        <img src="/assets/images/others/client-img.svg" alt="">
+                    </div>
+                    <p class="client-quote">
+                        I had a very nice and easy experience using Dr. Health,for me and my family 
+                    </p>
+                    <div class="flex">
+                        <strong class=" client-name ">Ayoub fennouni</strong>
+                        <p class="client-position">CEO</p>
+                    </div>
+                </div>
+                <img class="section-shape2" src="/assets/images/others/testimonials.svg" alt="">
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<!-- =========================== section Plans-->
+<section class="section is-sm section-plans">
+    <img class="section-particle  top-0" src="/assets/images/others/particle.svg" alt="">
+    <div class="container">
+        <div class="section-head">
+            <h2 class="section-title is-center ">
+                Plans maked for you<span class="text-primary">. </span>
+            </h2>
+            <p class="section-description is-center  ml-auto mr-auto mt-20">
+                We understand the importance of approaching each work integrally and believe in the power of
+                simple
+                and easy communication.
+            </p>
+        </div>
+        <div class="row flex vcenter min-30 ">
+
+            <!-- ====== plan item -->
+            <div class="col-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                <div class="plan-item has-style1 in-left">
+                    <div class="plan-head">
+                        <h4 class="plan-title"> Free Trial Plan </h4>
+                        <div class="flex center">
+                            <div class="plan-price">0</div> <span class="price-var ">$</span>
+                        </div>
+                        <div class="flex center mt-1">
+                            <a href="" class="btn btn-dark btn-round"> Get free Trial! </a>
+                        </div>
+                    </div>
+                    <div class="plan-body">
+                        <ul class="list-items">
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> 30 day free plan
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> 5 consultations
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> 3 live-chat sessions
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> Full list of the doctors
+
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon>Acces to prescriptions
+
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ====== plan item -->
+            <div class="  col-md-4">
+                <div class="plan-item has-style2 is-active  mt-2">
+                    <div class="best-choose">
+                        Best Choose
+                    </div>
+                    <div class="plan-head ">
+                        <h4 class="plan-title">Premium</h4>
+                        <div class="flex center">
+                            <div class="plan-price">129</div> <span class="price-var ">$</span>
+                        </div>
+                        <div class="flex center mt-1">
+                            <a href="" class="btn btn-primary btn-block btn-round"> Get Premium! </a>
+                        </div>
+                    </div>
+                    <div class="plan-body">
+                        <ul class="list-items">
+
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> Initial check-up
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> 15 Consultations/month
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> 10 Hours Live-chat sessions
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> Full doctor list
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> Access to prescriptions
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ====== plan item -->
+            <div class="col-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                <div class="plan-item has-style1 in-right">
+                    <div class="plan-head">
+                        <h4 class="plan-title"> Pro Plan </h4>
+                        <div class="flex center">
+                            <div class="plan-price">$229</div> <span class="price-var ">$</span>
+                        </div>
+                        <div class="flex center mt-1">
+                            <a href="" class="btn btn-dark btn-round"> Get Pro ! </a>
+                        </div>
+                    </div>
+                    <div class="plan-body">
+                        <ul class="list-items">
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> Unlimited consultations
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> Weekly status of your health by doctors
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> Full initial check-up
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> 24/7 Live chat
+
+                            </li>
+                            <li class="item">
+                                <ion-icon name="checkmark"></ion-icon> 3 Accounts linked for you and your family members
+
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =========================== section Blog-->
+<section class="section is-sm section-blog">
+    <div class="container">
+        <div class="section-head flex between vcenter">
+            <div>
+                <h5 class="section-subtitle"> Articles </h5>
+                <h2 class="section-title">Health and Nutrition Articles<span class="text-primary">. </span></h2>
+            </div>
+            <a href="#" class="btn btn-opacity mt-sm-30 btn-round"> All Articles </a>
+        </div>
+        <div class="work-boxes blog-boxes-slick">
+            <div class="">
+                <div class="post-wrap mt-0">
+                    <a href="#">
+                        <div class="post-img">
+                            <img src="/assets/images/bg/post1.png" alt="">
+                        </div>
+                    </a>
+                    <div class="post-content mb-0">
+                        <div class="post-meta">
+                        </div>
+                        <h3 class="post-title">
+                            <a href="#">Top 10 Best Practices for Eating Healthy </a>
+                        </h3>
+                        <p class="post-description">
+                            January often means time to make some New Year’s Resolutions.
+                            Countless Americans will no doubt wake up tomorrow and resolve to do things like lose weight, get in shape and eat healthier.
+          
+
+                        </p>
+                        <span class="post-author">By <a href="#" rel="author">Albert Kerri</a></span>
+                        <span class="post-date"> 02 september 2019 </span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="post-wrap mt-0">
+                    <a href="#">
+                        <div class="post-img">
+                            <img src="/assets/images/bg/post3.png" alt="">
+                        </div>
+                    </a>
+                    <div class="post-content mb-0">
+                        <div class="post-meta">
+                        </div>
+                        <h3 class="post-title">
+                            <a href="#">Path to improved health </a>
+                        </h3>
+                        <p class="post-description">
+                            What you eat is closely linked to your health. Balanced nutrition has many benefits.
+                            By making healthier food choices, you can prevent or treat some conditions. 
+                            These include heart disease, stroke, and diabetes.
+                        </p>
+                        <span class="post-author">By <a href="#" rel="author">Albert Kerri</a></span>
+                        <span class="post-date"> 02 september 2019 </span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="post-wrap mt-0">
+                    <a href="#">
+                        <div class="post-img">
+                            <img src="/assets/images/bg/post1.png" alt="">
+                        </div>
+                    </a>
+                    <div class="post-content mb-0">
+                        <div class="post-meta">
+                        </div>
+                        <h3 class="post-title">
+                            <a href="#">Meditation</a>
+                        </h3>
+                        <p class="post-description">
+                            Many millions of people in the West and elsewhere in the world are active meditators. 
+                            Meditation in the West is practiced for both health and religious or spiritual reasons.
+                        </p>
+                        <span class="post-author">By <a href="#" rel="author">Albert Kerri</a></span>
+                        <span class="post-date"> 02 september 2019 </span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="post-wrap mt-0">
+                    <a href="#">
+                        <div class="post-img">
+                            <img src="/assets/images/bg/post1.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="post-content mb-0">
+                        <div class="post-meta">
+                        </div>
+                        <h3 class="post-title">
+                            <a href="#">Winning tactics for a new digital agency</a>
+                        </h3>
+                        <p class="post-description">
+                            Im not sure, try something else i know you've made thirty iterations but can
+                            we go back to the first one that was the best version.
+                        </p>
+                        <span class="post-author">By <a href="#" rel="author">Albert Kerri</a></span>
+                        <span class="post-date"> 02 september 2019 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =========================== Footer-->
+<footer class="footer has-style1">
+    <div class="footer-head">
+        <img class="rounded sm-hidden " src="/assets/images/others/hero-round.svg" alt="">
+        <div class="overflow-hidden">
+            <img class="footer-shape" src="/assets/images/others/footer-shape.svg" alt="">
+        </div>
+        <button id="button" class="to-top">
+            <ion-icon name="arrow-up"></ion-icon>
+        </button>
+        <div class="section is-sm ">
+            <div class="container">
+                <h2 class="section-title is-center text-white">
+                    Organise your Health with Dr. Health
+                </h2>
+                <div class="flex center mt-5">
+                    <form class=" bg-transparent ">
+                        <input type="text" class="footer-input" placeholder="Enter Your Email Adress">
+                        <button class="btn btn-primary btn-round footer-btn"> Subscribe </button>
+                    </form>
+                </div>
+                <div class="row footer-contact min-30">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="contact-item">
+                            <h6>Phone Number</h6>
+                            <p class="contact-item-info">+212 6 46 05 26 56</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="contact-item">
+                            <h6>Email Adress</h6>
+                            <p class="contact-item-info">drhealth@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="contact-item">
+                            <h6>Local Adress</h6>
+                            <p class="contact-item-info">United states, 2786 Bernardo Street</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-body">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <div class="footer-desc">
+                        <div class="logo">
+                            <img src="/images/logo.png" alt="">
+                        </div>
+                        <p>
+                            Organizing your health efficiently!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="list-title">Company</h6>
+                    <ul class="list-items">
+                        <li> <a href="#">About</a> </li>
+                        <li> <a href="#">Our customers</a> </li>
+                        <li> <a href="#">Contact us</a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="list-title">Useful links</h6>
+                    <ul class="list-items">
+                        <li> <a href="#">Articles</a> </li>
+                        <li> <a href="#">Doctors</a> </li>
+                        <li> <a href="#">Contact us</a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="list-title">Legal</h6>
+                    <ul class="list-items">
+                        <li> <a href="#">Terms</a> </li>
+                        <li> <a href="#">Privacy </a> </li>
+                        <li> <a href="#">Cookies</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyright text-center text-copyright"> Codecool Hackaton</p>
+    </div>
+</footer>

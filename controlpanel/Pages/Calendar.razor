@@ -1,0 +1,38 @@
+﻿@page "/Calendar"
+@inject IJSRuntime js
+
+@code {
+	protected override async Task OnAfterRenderAsync(bool firstRender)
+	{
+		if (firstRender)
+		{
+			await js.InvokeVoidAsync("initCalendar");
+		}
+	}
+
+}
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+	<!--begin::Entry-->
+	<div class="d-flex flex-column-fluid">
+		<!--begin::Container-->
+		<div class="container">
+			<!--begin::Example-->
+			<!--begin::Card-->
+			<div class="card card-custom">
+				<div class="card-header">
+					<div class="card-title">
+						<h3 class="card-label">Consultations</h3>
+					</div>
+				</div>
+				<div class="card-body">
+					<div id="kt_calendar"></div>
+				</div>
+			</div>
+			<!--end::Card-->
+			<!--end::Example-->
+		</div>
+		<!--end::Container-->
+	</div>
+	<!--end::Entry-->
+</div>
