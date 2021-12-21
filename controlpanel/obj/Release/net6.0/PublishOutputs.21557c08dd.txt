@@ -1,0 +1,9 @@
+C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Docker\publish\controlpanel.exe
+C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Docker\publish\appsettings.Development.json
+C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Docker\publish\appsettings.json
+C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Docker\publish\controlpanel.dll
+C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Docker\publish\controlpanel.deps.json
+C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Docker\publish\controlpanel.runtimeconfig.json
+C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Docker\publish\controlpanel.pdb
+C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Docker\publish\GraphQL.Client.dll
+C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Docker\publish\Newtonsoft.Json.dll

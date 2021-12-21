@@ -26,4 +26,3 @@ C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Debug\net6.0\con
 C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Debug\net6.0\ref\controlpanel.dll
 C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Debug\net6.0\controlpanel.pdb
 C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Debug\net6.0\controlpanel.genruntimeconfig.cache
-C:\Users\alexm\Desktop\hackaton-sneaky-animals\controlpanel\obj\Debug\net6.0\controlpanel.csproj.AssemblyReference.cache

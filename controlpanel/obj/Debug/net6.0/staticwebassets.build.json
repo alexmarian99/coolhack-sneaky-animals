@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EMuarZPp1MMuu+IVyJ1o7su0krJTrAHsKRQpMIwt89I=",
+  "Hash": "F7Vq49zpsP53CvtZgOabHOOoVrZQ3x+ns+vQiGYOatM=",
   "Source": "controlpanel",
   "BasePath": "_content/controlpanel",
   "Mode": "Default",
@@ -38760,6 +38760,40 @@
       "OriginalItemSpec": "wwwroot\\blazor.js"
     },
     {
+      "Identity": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\icons\\icon-192x192.png",
+      "SourceId": "controlpanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\",
+      "BasePath": "_content/controlpanel",
+      "RelativePath": "icons/icon-192x192.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\icon-192x192.png"
+    },
+    {
+      "Identity": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\icons\\icon-512x512.png",
+      "SourceId": "controlpanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\",
+      "BasePath": "_content/controlpanel",
+      "RelativePath": "icons/icon-512x512.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\icon-512x512.png"
+    },
+    {
       "Identity": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\images\\darklogo.png",
       "SourceId": "controlpanel",
       "SourceType": "Discovered",
@@ -38811,6 +38845,23 @@
       "OriginalItemSpec": "wwwroot\\jquery.js"
     },
     {
+      "Identity": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\manifest.json",
+      "SourceId": "controlpanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\",
+      "BasePath": "_content/controlpanel",
+      "RelativePath": "manifest.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\manifest.json"
+    },
+    {
       "Identity": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\metronic.js",
       "SourceId": "controlpanel",
       "SourceType": "Discovered",
@@ -38826,6 +38877,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\metronic.js"
+    },
+    {
+      "Identity": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\serviceworker.js",
+      "SourceId": "controlpanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\",
+      "BasePath": "_content/controlpanel",
+      "RelativePath": "serviceworker.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\serviceworker.js"
     },
     {
       "Identity": "C:\\Users\\alexm\\Desktop\\hackaton-sneaky-animals\\controlpanel\\wwwroot\\site.css",
